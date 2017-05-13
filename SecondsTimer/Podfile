@@ -1,0 +1,32 @@
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+
+use_frameworks!
+
+
+abstract_target 'MyApp' do
+    
+    pod 'FMDB'
+    pod 'AFNetworking'
+    pod ‘YYKit’
+    pod ‘SnapKit’
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+    pod 'ReactiveCocoa'
+    pod 'Bugly'
+    
+target 'SecondsTimer'
+
+end
+
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
+end
+
+
