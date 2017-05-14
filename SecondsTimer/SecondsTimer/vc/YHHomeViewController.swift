@@ -16,7 +16,17 @@ class YHHomeViewController: YHBaseViewController {
         // Do any additional setup after loading the view.
         
         self.title = "秒表"
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.hex("f5f5f5")
+        self.isCustomBackBtn = true
+        self.yh_navc_bar(pos: .right, clickBlock: { [weak self] in
+            
+            let detailvc = YHDetailViewController()
+            self?.navigationController?.pushViewController(detailvc, animated: true)
+            
+        }) { (sender) -> Void? in
+            
+            sender.setTitle("详情", for: .normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

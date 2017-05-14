@@ -9,14 +9,14 @@ abstract_target 'MyApp' do
     
     pod 'FMDB'
     pod 'AFNetworking'
-    pod ‘YYKit’
-    pod ‘SnapKit’
+    pod 'YYKit'
+    pod 'SnapKit'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
     pod 'ReactiveCocoa'
     pod 'Bugly'
     
-target 'SecondsTimer'
+    target 'SecondsTimer'
 
 end
 

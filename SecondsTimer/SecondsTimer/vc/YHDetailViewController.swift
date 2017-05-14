@@ -1,5 +1,5 @@
 //
-//  YHBaseNavigationController.swift
+//  YHDetailViewController.swift
 //  SecondsTimer
 //
 //  Created by 林宁宁 on 2017/5/13.
@@ -8,31 +8,32 @@
 
 import UIKit
 
-class YHBaseNavigationController: UINavigationController {
+class YHDetailViewController: YHBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        navcStyle()
-    }
-
-    func navcStyle() -> Void {
         
-        self.navigationBar.setBackgroundImage(UIColor.color1a1a1a.drawToImage(), for: UIBarMetrics.default)
-        self.navigationBar.tintColor = UIColor.color00aaff
-        
-        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-
-        self.navigationBar.shadowImage = UIImage()
-        
-        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)        
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+    }
+    
+    func dalayEvent() -> Void {
+        
+        print("手机收到卡卡圣诞节")
+        
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
     
 
