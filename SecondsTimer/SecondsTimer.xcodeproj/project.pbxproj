@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		752A6C0F3430403C24392325 /* Pods_MyApp_SecondsTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A71D9BC9F92862696FEF491 /* Pods_MyApp_SecondsTimer.framework */; };
+		7A27A39F1ECA86200018B0ED /* YHTimeDisplayV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A27A39E1ECA86200018B0ED /* YHTimeDisplayV.swift */; };
 		7A36D81A1EC68F8F003CE2D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36D8191EC68F8F003CE2D8 /* AppDelegate.swift */; };
 		7A36D8211EC68F8F003CE2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A36D8201EC68F8F003CE2D8 /* Assets.xcassets */; };
 		7A36D8241EC68F8F003CE2D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A36D8221EC68F8F003CE2D8 /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		4B4A399C91085A0A92E1E193 /* Pods-MyApp-SecondsTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-SecondsTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-SecondsTimer/Pods-MyApp-SecondsTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		589D6C8912CC06EF7C9FCAF7 /* Pods-MyApp-SecondsTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp-SecondsTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp-SecondsTimer/Pods-MyApp-SecondsTimer.release.xcconfig"; sourceTree = "<group>"; };
+		7A27A39E1ECA86200018B0ED /* YHTimeDisplayV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHTimeDisplayV.swift; sourceTree = "<group>"; };
 		7A36D8161EC68F8F003CE2D8 /* SecondsTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondsTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A36D8191EC68F8F003CE2D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		7A36D8201EC68F8F003CE2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 				9A71D9BC9F92862696FEF491 /* Pods_MyApp_SecondsTimer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A27A39D1ECA85F60018B0ED /* v */ = {
+			isa = PBXGroup;
+			children = (
+				7A27A39E1ECA86200018B0ED /* YHTimeDisplayV.swift */,
+			);
+			name = v;
 			sourceTree = "<group>";
 		};
 		7A36D80D1EC68F8F003CE2D8 = {
@@ -141,6 +151,7 @@
 		7A36D82F1EC691A7003CE2D8 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				7A27A39D1ECA85F60018B0ED /* v */,
 				7A36D8361EC6921F003CE2D8 /* YHHomeViewController.swift */,
 				7A36D8421EC73D75003CE2D8 /* YHDetailViewController.swift */,
 			);
@@ -290,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A27A39F1ECA86200018B0ED /* YHTimeDisplayV.swift in Sources */,
 				7A36D8451EC74B26003CE2D8 /* YH_ext_object.swift in Sources */,
 				7A36D83D1EC6A01B003CE2D8 /* YH_ext_vc.swift in Sources */,
 				7A36D8371EC6921F003CE2D8 /* YHHomeViewController.swift in Sources */,
